@@ -1,0 +1,7 @@
+How to rerun failed tests?
+answer:
+there are many ways, and easiest one is to add following
+parameter info maven-surefire plugin canfiguration:
+<rerunFailingTestsCount>1<rerunFailingTestsCount>
+
+ot, with cucumber, we can generate txt file with failed
