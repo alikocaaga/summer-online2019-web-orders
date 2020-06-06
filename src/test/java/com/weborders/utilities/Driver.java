@@ -74,7 +74,7 @@ public class Driver {
                         WebDriverManager.firefoxdriver().setup();
                         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
                         desiredCapabilities.setBrowserName(BrowserType.FIREFOX);
-                        driverPool.set(new RemoteWebDriver(new URL("http://ec2-54-85-250-165.compute-1.amazonaws.com:4444/wd/hub"), desiredCapabilities));
+                        driverPool.set(new RemoteWebDriver(new URL("http://ec2-3-87-141-2.compute-1.amazonaws.com:4444/wd/hub"), desiredCapabilities));
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
@@ -84,7 +84,7 @@ public class Driver {
                         WebDriverManager.chromedriver().setup();
                         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
                         desiredCapabilities.setBrowserName(BrowserType.CHROME);
-                        driverPool.set(new RemoteWebDriver(new URL("http://ec2-54-85-250-165.compute-1.amazonaws.com:4444/wd/hub"), desiredCapabilities));
+                        driverPool.set(new RemoteWebDriver(new URL("http://ec2-3-87-141-2.compute-1.amazonaws.com:4444/wd/hub"), desiredCapabilities));
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
